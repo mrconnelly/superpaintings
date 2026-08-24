@@ -247,8 +247,26 @@ footer a { text-decoration: none; }
   .nav.open { display: flex; }
   .nav a { font-family: "Instrument Serif", Georgia, serif; font-size: 34px; font-weight: 400; letter-spacing: 0; text-transform: none; }
   .hero { min-height: 820px; }
-  .hero-film { object-position: 54% center; }
-  .hero-copy { padding: 130px 20px 48px; }
+  .hero {
+    padding-top: min(56.25vw, 340px);
+    align-items: flex-end;
+    background: #11110f;
+  }
+  .hero-film {
+    inset: 74px 0 auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    object-position: center;
+    background: #11110f;
+  }
+  .hero-shade {
+    top: 74px;
+    height: min(56.25vw, 340px);
+    background: linear-gradient(180deg, transparent 70%, #11110f 100%);
+  }
+  .hero-copy { padding: 80px 20px 48px; }
   .hero h1 { margin: 32px 0 50px; font-size: clamp(52px, 14.5vw, 72px); line-height: .86; }
   .hero-bottom { gap: 20px; align-items: flex-end; }
   .hero-bottom > p { max-width: 250px; font-size: 14px; }
