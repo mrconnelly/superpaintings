@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { paintings, paintingTargets } from "@/data/paintings";
 
 export const metadata: Metadata = { title: "AR Viewer", description: "Point your phone at a Super Painting to see it move." };
+
+export const viewport: Viewport = { themeColor: "#000000" };
 
 export default function ARViewerPage() {
   // Isolate A-Frame's full-screen camera/canvas and lifecycle from the site shell.
