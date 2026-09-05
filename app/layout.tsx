@@ -4,13 +4,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://superpaintings.co.uk"),
   title: {
-    default: "Super Paintings — The Living Painting Archive",
+    default: "Super Paintings",
     template: "%s — Super Paintings",
   },
   description:
-    "Oil paintings animated frame by frame and brought to life through augmented reality. An archive by Oliver Bancroft and James Connelly.",
+    "Oil paintings animated frame by frame and brought to life through augmented reality. Paintings by Oliver Bancroft and James Connelly.",
   openGraph: {
-    title: "Super Paintings — The Living Painting Archive",
+    title: "Super Paintings",
     description: "Old masters meet disco moves in paint, film and augmented reality.",
     type: "website",
     images: [{ url: "/archive/hero-poster.png", width: 1920, height: 1080 }],

@@ -8,7 +8,7 @@ export function SiteHeader() {
 
   return (
     <header className="site-header">
-      <a className="wordmark" href="#top" aria-label="Super Paintings, back to top">
+      <a className="wordmark" href="/" aria-label="Super Paintings, home">
         <span className="mark">SP</span>
         <span>Super Paintings</span>
       </a>
@@ -23,10 +23,10 @@ export function SiteHeader() {
         <i aria-hidden="true" />
       </button>
       <nav id="site-nav" className={open ? "nav open" : "nav"} aria-label="Main navigation">
-        <a href="#story" onClick={close}>Story</a>
-        <a href="#archive" onClick={close}>Archive</a>
-        <a href="#process" onClick={close}>Process</a>
-        <a href="#future" onClick={close}>Future</a>
+        <a href="/#story" onClick={close}>Story</a>
+        <a href="/paintings" onClick={close}>Paintings</a>
+        <a href="/ar-viewer" onClick={close}>AR Viewer</a>
+        <a href="/#process" onClick={close}>Process</a>
       </nav>
     </header>
   );

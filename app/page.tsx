@@ -1,6 +1,6 @@
-import { ArchiveCard } from "@/components/archive-card";
+import { PaintingGrid } from "@/components/painting-grid";
 import { SiteHeader } from "@/components/site-header";
-import { archiveItems, movements } from "@/data/archive";
+const movements = ["Clap your hands", "Walk", "Swim", "Ski", "Spray", "Sound your horn", "Macho Man", "Ring the bell", "Superman"];
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         </video>
         <div className="hero-shade" />
         <div className="hero-copy">
-          <p className="kicker">The living painting archive · 2014—</p>
+          <p className="kicker">Super Paintings · 2014—</p>
           <h1 id="hero-title"><span className="hero-line">Old masters.</span><br /><em>New moves.</em></h1>
           <div className="hero-bottom">
             <p>Oil paintings animated by hand, frame by frame, then revealed through augmented reality.</p>
@@ -52,17 +52,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="archive-section" id="archive">
+      <section className="archive-section" id="paintings">
         <div className="section-heading">
           <div>
-            <p className="section-index">02 / Selected archive</p>
-            <h2>Paintings in <em>motion</em></h2>
+            <p className="section-index">02 / Paintings</p>
+            <h2>The original <em>paintings</em></h2>
           </div>
-          <p>Three moments from the surviving project film. This collection is designed to grow as more original material is recovered.</p>
+          <p>Look at the original paintings. Choose one to see it large, or explore the collection.</p>
         </div>
-        <div className="archive-grid">
-          {archiveItems.map((item) => <ArchiveCard item={item} key={item.number} />)}
-        </div>
+        <PaintingGrid />
+        <a className="text-link" href="/paintings">All paintings <span aria-hidden="true">↗</span></a>
       </section>
 
       <section className="marquee" aria-label="The movements">
@@ -102,7 +101,7 @@ export default function Home() {
       <section className="future" id="future">
         <p className="section-index">04 / The next frame</p>
         <div>
-          <h2>The archive is open.<br /><em>So is the future.</em></h2>
+          <h2>The collection is open.<br /><em>So is the future.</em></h2>
           <p>
             Super Paintings began as an experiment in paint and augmented reality. This new home preserves
             the original work—and leaves room for recovered paintings, exhibition histories, new commissions
@@ -124,7 +123,7 @@ export default function Home() {
           <span className="mark">SP</span><span>Super Paintings</span>
         </a>
         <p>An artwork by Oliver Bancroft &amp; James Connelly.</p>
-        <p>Archive rebuilt 2026 · <a href="#top">Back to top ↑</a></p>
+        <p>Super Paintings · 2026 · <a href="#top">Back to top ↑</a></p>
       </footer>
     </main>
   );
