@@ -1,6 +1,8 @@
-# Source photograph comparison — no website changes
+# Historical source photograph comparison
 
-These sheets compare the actual files currently available. Original and display photographs are reduced to fit the same 426 × 516 review panels; the matching Trebuchet photograph is shown at its native size. Proportions and complete file framing are retained. There are no additional colour, exposure, sharpening or perspective adjustments. PNG sheets avoid another lossy JPEG save.
+**Current website decision:** all four paintings now use their original `triggerImage` photographs on the homepage, collection, detail pages and social previews. Enhanced derivatives and their preparation script have been removed to prioritise visual continuity with AR animations. The sheets below preserve the earlier source comparison; “current displayImage” in their labels refers to the version at the time of that review, not the website today.
+
+These sheets compare the files available at the time of that review. Original and display photographs are reduced to fit the same 426 × 516 review panels; the matching Trebuchet photograph is shown at its native size. Proportions and complete file framing are retained. There are no additional colour, exposure, sharpening or perspective adjustments. PNG sheets avoid another lossy JPEG save.
 
 | Painting / comparison | Sharpness | Colour and exposure | Square-on view | Overall assessment |
 | --- | --- | --- | --- | --- |
