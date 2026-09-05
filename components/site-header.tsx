@@ -25,6 +25,7 @@ export function SiteHeader() {
       <nav id="site-nav" className={open ? "nav open" : "nav"} aria-label="Main navigation">
         <a href="/#story" onClick={close}>Story</a>
         <a href="/paintings" onClick={close}>Paintings</a>
+        <a href="/texts" onClick={close}>Texts</a>
         <a href="/ar-viewer" onClick={close}>AR Viewer</a>
         <a href="/#process" onClick={close}>Process</a>
       </nav>

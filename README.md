@@ -91,3 +91,34 @@ now uses real paintings; its other sections retain their design.
 
 The default shell's Node 18 could not run this Next.js build. Cached Chromium was
 incompatible with this macOS version; browser checks used installed Chrome.
+
+## Texts and publication review
+
+`/texts` lists publications from `data/texts.ts`. Its first entry links to the
+HTML digital edition at `/texts/rituals-and-rules-of-sharing`: *Rituals and Rules
+of Sharing*, Corinna Spencer, *Garageland, Issue XV*. The edition preserves the
+interview text and speaker labels, integrates artwork images and links to the
+four photographed original pages as a PDF. No publication date is inferred.
+
+See [the transcription review](docs/rituals-and-rules-transcription-review.md)
+for source order, image provenance and unresolved caption readings. The opening
+artwork's full title/dimensions and the truncated portrait caption need review;
+they are explicitly marked in the digital edition.
+
+**Review before deployment:** both the HTML article and
+`public/texts/rituals-and-rules-of-sharing.pdf` expose the complete article if
+published. Their URLs would be:
+
+- `https://superpaintings.co.uk/texts/rituals-and-rules-of-sharing`
+- `https://superpaintings.co.uk/texts/rituals-and-rules-of-sharing.pdf`
+
+Publication permission has not been established. Hiding the PDF link alone does
+not protect a file under `public/`. The index thumbnail and article artwork crops
+are also public assets. No new runtime or site dependency was introduced.
+
+A second entry, *SUPERPAINTINGS at Transition Gallery* by Francesca Goodwin
+(*Trebuchet*, 7 June 2013), currently preserves three locally hosted historical
+photographs and links to the original article. Its full text is pending a
+user-supplied copy; it is not presented as a completed digital transcription.
+See [the Trebuchet source review](docs/trebuchet-source-review.md) for provenance,
+image dimensions/checksums and the outstanding editorial work.

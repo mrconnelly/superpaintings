@@ -331,3 +331,54 @@ summary { cursor: pointer; }
   .painting-page { padding: 24px 16px 40px; }
   .painting-heading { align-items: flex-start; }
 }
+
+/* Photographed publications retain the same quiet presentation as the paintings. */
+.text-entry { max-width: 1120px; display: grid; grid-template-columns: minmax(0, 480px) minmax(0, 1fr); align-items: center; gap: clamp(32px, 6vw, 88px); }
+.text-entry + .text-entry { margin-top: 80px; }
+.text-entry img { width: 100%; height: auto; }
+.text-entry h2 { margin: 0; font: 400 clamp(32px, 4vw, 52px)/1.1 "Instrument Serif", Georgia, serif; }
+.text-author { margin: 24px 0 8px; font-size: 16px; }
+.text-publication { margin: 0; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.text-description { max-width: 390px; margin: 32px 0 24px; font-size: 15px; line-height: 1.7; }
+.text-pdf-link { font-size: 14px; text-underline-offset: 4px; }
+@media (max-width: 700px) {
+  .text-entry { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* The digital edition keeps the original text separate from editorial notes. */
+.text-entry h2 a { text-decoration: none; }
+.text-entry h2 a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.digital-essay { padding: 40px 3.3vw 88px; }
+.essay-header { max-width: 1000px; margin: 0 auto 64px; }
+.essay-back, .essay-source { font-size: 13px; text-underline-offset: 4px; }
+.essay-edition { margin: 56px 0 24px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+.essay-header h1 { max-width: 950px; margin: 0; font: 400 clamp(52px, 8vw, 108px)/.98 "Instrument Serif", Georgia, serif; letter-spacing: -.025em; }
+.essay-author { margin: 28px 0; font-size: 16px; }
+.essay-standfirst { max-width: 720px; margin: 0 0 24px; font: 400 clamp(22px, 2.5vw, 30px)/1.4 Georgia, serif; }
+.essay-prose { max-width: 680px; margin: 0 auto; font: 400 20px/1.75 Georgia, serif; }
+.essay-prose p { margin: 0 0 1.35em; }
+.essay-dialogue { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; }
+.essay-speaker { padding-top: 5px; font: 600 12px/2 "DM Sans", Arial, sans-serif; letter-spacing: .06em; }
+.essay-speaker abbr { text-decoration: none; }
+.essay-figure { max-width: 640px; margin: 64px auto; }
+.essay-opening-art { max-width: 576px; }
+.essay-portrait { max-width: 540px; }
+.essay-figure img, .essay-artworks img { width: 100%; height: auto; }
+.digital-essay figcaption { margin-top: 16px; font-size: 13px; line-height: 1.6; }
+.essay-image-note, .transcription-marker { color: #5e5e55; font-size: 12px; font-style: normal; }
+.essay-artworks { max-width: 1000px; margin: 64px auto; display: grid; grid-template-columns: 1.1fr 1fr; align-items: start; gap: 48px; }
+.essay-artworks figure { margin: 0; }
+.essay-prose .essay-exhibition { margin-top: 48px; font: 400 14px/1.6 "DM Sans", Arial, sans-serif; }
+.essay-editorial { max-width: 680px; margin: 72px auto 0; font-size: 13px; line-height: 1.7; }
+.essay-editorial h2 { font-size: 16px; font-weight: 500; }
+@media (max-width: 600px) {
+  .digital-essay { padding: 28px 20px 60px; }
+  .essay-edition { margin-top: 40px; }
+  .essay-header { margin-bottom: 40px; }
+  .essay-prose { font-size: 18px; line-height: 1.7; }
+  .essay-dialogue { grid-template-columns: 25px minmax(0, 1fr); gap: 8px; }
+  .essay-artworks { grid-template-columns: 1fr; gap: 40px; }
+  .essay-figure, .essay-artworks { margin-top: 40px; margin-bottom: 40px; }
+}
+
+.essay-header .trebuchet-title { font-size: clamp(28px, 7.5vw, 108px); }

@@ -1,0 +1,35 @@
+export const texts = [
+  {
+    slug: "rituals-and-rules-of-sharing",
+    title: "Rituals and Rules of Sharing",
+    author: "Corinna Spencer",
+    publication: "Garageland, Issue XV",
+    description: "Corinna Spencer ventures into James Connelly and Oliver Bancroft’s private world of collaborative painting.",
+    thumbnail: "/texts/rituals-and-rules-of-sharing.jpg",
+    thumbnailWidth: 600,
+    thumbnailHeight: 800,
+    thumbnailAlt: "Opening page of Rituals and Rules of Sharing in Garageland, Issue XV",
+    linkLabel: "Read digital edition",
+    pdf: "/texts/rituals-and-rules-of-sharing.pdf",
+  },
+  {
+    slug: "superpaintings-at-transition-gallery",
+    title: "SUPERPAINTINGS at Transition Gallery",
+    author: "Francesca Goodwin",
+    publication: "Trebuchet, 7 June 2013",
+    datePublished: "2013-06-07",
+    description: "They’re laughing. Are we?",
+    thumbnail: "/texts/superpaintings-at-transition-gallery/installation.jpg",
+    thumbnailWidth: 823,
+    thumbnailHeight: 592,
+    thumbnailAlt: "Historical installation photograph of paintings on the white walls of Transition Gallery",
+    linkLabel: "View historical photographs",
+    sourceUrl: "https://www.trebuchet-magazine.com/superpaintings-at-transition-gallery/",
+    // Source image labels are preserved; no separate captions/photographer credit were supplied.
+    photographs: [
+      { src: "/texts/superpaintings-at-transition-gallery/comb-your-hair.jpg", width: 426, height: 516, label: "Comb Your Hair", alt: "Painted portrait of a long-haired man with his hand beside his hair" },
+      { src: "/texts/superpaintings-at-transition-gallery/installation.jpg", width: 823, height: 592, label: "Transition Gallery", alt: "Exhibition installation showing paintings on white gallery walls" },
+      { src: "/texts/superpaintings-at-transition-gallery/macho-man.jpg", width: 627, height: 529, label: "Macho Man", alt: "Painted portrait of a man in a red shirt raising both fists" },
+    ],
+  },
+] as const;

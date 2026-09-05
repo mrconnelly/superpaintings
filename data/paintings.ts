@@ -1,7 +1,10 @@
 export type Painting = {
   slug: string;
   title: string;
+  /** Original recognition photograph: keep unchanged for AR. */
   triggerImage: string;
+  /** Conservatively corrected website copy; same dimensions as the original. */
+  displayImage: string;
   animation: string;
   width: number;
   height: number;
@@ -20,6 +23,7 @@ export const paintings: readonly Painting[] = [
     slug: "ollie-clapping",
     title: "Clap Your Hands (Ollie)",
     triggerImage: "/paintings/ollie-clapping.JPG",
+    displayImage: "/paintings/display/ollie-clapping.jpg",
     animation: "/paintings/ollie-clapping.mp4",
     width: 2662,
     height: 3559,
@@ -30,6 +34,7 @@ export const paintings: readonly Painting[] = [
     slug: "jimmy-clapping",
     title: "Clap Your Hands (Jimmy)",
     triggerImage: "/paintings/jimmy-clapping.JPG",
+    displayImage: "/paintings/display/jimmy-clapping.jpg",
     animation: "/paintings/jimmy-clapping.mp4",
     width: 2558,
     height: 3388,
@@ -40,6 +45,7 @@ export const paintings: readonly Painting[] = [
     slug: "ollie-combing",
     title: "Comb Your Hair (Ollie)",
     triggerImage: "/paintings/ollie-combing.JPG",
+    displayImage: "/paintings/display/ollie-combing.jpg",
     animation: "/paintings/ollie-combing.mp4",
     width: 3267,
     height: 3916,
@@ -50,6 +56,7 @@ export const paintings: readonly Painting[] = [
     slug: "jimmy-sleeping",
     title: "Sleep (Jimmy)",
     triggerImage: "/paintings/jimmy-sleeping.JPG",
+    displayImage: "/paintings/display/jimmy-sleeping.jpg",
     animation: "/paintings/jimmy-sleeping.mp4",
     width: 3379,
     height: 4070,

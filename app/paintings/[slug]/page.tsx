@@ -10,7 +10,7 @@ export function generateStaticParams() { return paintings.map(({ slug }) => ({ s
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const painting = paintings.find((item) => item.slug === slug);
-  return { title: painting?.title ?? "Painting", openGraph: painting ? { images: [{ url: painting.triggerImage, width: painting.width, height: painting.height, alt: painting.title }] } : undefined };
+  return { title: painting?.title ?? "Painting", openGraph: painting ? { images: [{ url: painting.displayImage, width: painting.width, height: painting.height, alt: painting.title }] } : undefined };
 }
 
 export default async function PaintingPage({ params }: Props) {
